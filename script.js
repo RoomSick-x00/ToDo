@@ -9,11 +9,12 @@ function addTodo() {
     const inputel = document.querySelector("input");
     const task = inputel.value;
 
-    const newDiv = document.createElement("div");
-    newDiv.setAttribute('id', "todo-"+ctr);
-    newDiv.innerHTML = task +'<button onclick = "deleteTodo('+ctr+')">delete</button>';
+    const newTask = document.createElement("tr");
+    newTask.setAttribute('id', "todo-"+ctr);
+    newTask.innerHTML = '<th width="50%" id="todolist">'+task+'</th><th width="25%"><input type="checkbox" name="todo" value="todo" onclick="deleteTodo('+ctr+')"></th><th width="12.5%"><button onclick="deleteTodo('+ctr+')" id="deleteButton">Delete</button></th><th width="12.5%"><button onclick="editTodo('+ctr+')" id="updateButton">Update</button></th>';
 
-    document.querySelector("body").appendChild(newDiv);
+    document.querySelector("table").appendChild(newTask);
     ctr++;
 }
 
+//edit 

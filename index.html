@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>ToDo</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+
+<body bgcolor="black">
     <div>
         <h1>ToDo</h1>
     </div>
@@ -11,9 +14,21 @@
         <h3>
             Enter your tasks here:
             <input id="todo" type="text" placeholder="Enter task...">
-            <button onclick="addTodo()">Add</button>
+            <button onclick="addTodo()" id="addButton">Add</button>
         </h3>
+    </div>
+    <div>
+        <!-- table layout -->
+        <table id="todoList" width="100%" border="1">
+            <tr class="tableHeader">
+                <th width="50%">Task</th>
+                <th width="25%">Completed</th>
+                <th width="12.5%">Delete</th>
+                <th width="12.5%">Update</th>
+            </tr>
+        </table>
     </div>
 </body>
 <script src="script.js"></script>
+
 </html>

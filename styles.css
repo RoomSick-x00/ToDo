@@ -1,0 +1,165 @@
+/* Body Styling */
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+}
+
+/* Title Styling */
+h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-top: 20px;
+    text-shadow: 0 0 10px #00f7ff, 0 0 20px #00d9ff;
+    letter-spacing: 2px;
+}
+
+/* Input Section */
+h3 {
+    font-weight: bold;
+    color: #fff;
+    font-size: 1.2rem;
+    margin-top: 15px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+    transition: 0.3s;
+}
+
+input[type="text"]::placeholder {
+    color: #bbb;
+}
+
+input[type="text"]:focus {
+    box-shadow: 0 0 15px #00f7ff;
+}
+
+/* Add Button */
+#addButton {
+    background: linear-gradient(135deg, #00f7ff, #00d9ff);
+    color: black;
+    font-weight: bold;
+    border: none;
+    padding: 10px 18px;
+    margin-left: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.6);
+}
+#addButton:hover {
+    background: linear-gradient(135deg, #00d9ff, #00f7ff);
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #00f7ff;
+}
+
+/* Delete Button */
+#deleteButton {
+    background: linear-gradient(135deg, #ff4b5c, #ff1e3c);
+    color: white;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.6);
+    font-weight: bold;
+    border: none;
+    padding: 10px 18px;
+    margin-left: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+#deleteButton:hover {
+    background: linear-gradient(135deg, #ff1e3c, #ff4b5c);
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.8);
+}
+
+/* Update Button */
+#updateButton {
+    background: linear-gradient(135deg, #4caf50, #2ecc71);
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 255, 100, 0.6);
+    font-weight: bold;
+    border: none;
+    padding: 10px 18px;
+    margin-left: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+#updateButton:hover {
+    background: linear-gradient(135deg, #2ecc71, #4caf50);
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 255, 100, 0.8);
+}
+
+/* Table Styling */
+table {
+    width: 60%;                  /* Fixed width */
+    max-width: 60%;              /* Prevents expanding */
+    min-width: 60%;              /* Prevents shrinking */
+    table-layout: fixed;         /* Prevents resizing */
+    margin: 20px auto;           /* Centered */
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+}
+
+/* Table Header */
+.tableHeader {
+    font-size: 1.3rem;
+    background: rgba(0, 255, 255, 0.3);
+    color: #fff;
+    padding: 12px;
+    text-transform: uppercase;
+    text-shadow: 0 0 5px #00f7ff;
+}
+
+/* Table Rows */
+#todoList th {
+    padding: 12px;
+    text-align: center;
+    font-size: 1.1rem;
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    word-wrap: break-word; /* Ensures long tasks don’t stretch table */
+}
+
+/* Task Text */
+#todolist {
+    color: #00ffea;
+    font-weight: bold;
+    text-shadow: 0 0 6px #00f7ff;
+}
+
+/* Checkbox Styling */
+input[type="checkbox"] {
+    transform: scale(1.4);
+    cursor: pointer;
+}
+
+/* Row Hover Effect */
+tr:hover {
+    background: rgba(0, 255, 255, 0.15);
+    transition: 0.3s;
+}
